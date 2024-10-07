@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:inherit; 
+  background-color: rgb(117, 74, 111);
+}
+
+
+form {
+  height: fit-content;  
+  background-color: antiquewhite;
+  padding:5%;
+  border-radius: 10%;
+}
+
+label {
+  display: block; /* To make labels occupy full width */
+  margin-bottom: 5px; /* Add margin between labels */
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 30px;
+    height: 30px;
+    width:250px
+}
+
+button{
+  height: 100px;
+}

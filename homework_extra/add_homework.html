@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Προσθήκη Εργασίας</title>
+    <link rel="stylesheet" href="add_homework.css" />
+</head>
+<body>
+    <main>
+        <form action="add_homework.php" method="post" enctype="multipart/form-data">
+            <h2>Προσθήκη Εργασίας</h2>
+            <br>
+            <label for="goals">Στόχοι:</label>
+            <textarea id="goals" name="goals" required></textarea>
+            <br>
+            <br>
+            <label for="deliverables">Παραδοτέα:</label>
+            <textarea id="deliverables" name="deliverables" required ></textarea>
+            <br>
+            <br>
+            <label for="date">Ημερομηνία Παράδοσης (Έτος{####}-Μήνας{##}-Ημέρα{##}):</label>
+            <input type="text" id="date" name="date" pattern="\d{4}-\d{2}-\d{2}" placeholder="Παράδειγμα: 2023-09-15" required>
+            <br>
+            <br>
+            <label for="file">Επιλογή Αρχείου:</label>
+            <input type="file" id="file" name="file" accept=".doc, .docx" required>
+            <br>
+            <br>
+            <input type="submit" value="Προσθήκη">
+        </form>
+    </main>
+</body>
+</html>

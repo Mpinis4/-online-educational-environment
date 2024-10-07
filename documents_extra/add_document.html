@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Προσθήκη Εγγράφου</title>
+    <link rel="stylesheet" href="add_document.css" />
+</head>
+<body>
+    <main>
+        <form action="add_document.php" method="post" enctype="multipart/form-data">
+            <h2>Προσθήκη Εγγράφου</h2>
+            <br>
+            <label for="title">Τίτλος:</label>
+            <input type="text" id="title" name="title" required>
+            <br>
+            <br>
+            <label for="description">Περιγραφή:</label>
+            <textarea id="description" name="description" required ></textarea>
+            <br>
+            <br>
+            <label for="file">Επιλογή Αρχείου:</label>
+            <input type="file" id="file" name="file" accept=".doc, .docx" required>
+            <br>
+            <br>
+            <input type="submit" value="Προσθήκη">
+        </form>
+    </main>
+</body>
+</html>
